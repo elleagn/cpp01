@@ -6,11 +6,14 @@
 /*   By: gozon <gozon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/27 09:27:04 by gozon             #+#    #+#             */
-/*   Updated: 2025/01/27 11:30:54 by gozon            ###   ########.fr       */
+/*   Updated: 2025/01/27 14:17:12 by gozon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string>
+#ifndef WEAPON_HPP
+#define WEAPON_HPP
+
+# include <string>
 
 class Weapon {
 
@@ -20,7 +23,11 @@ class Weapon {
     
     public:
 
-        Weapon(std::string type);
-        ~Weapon(void);
+                        Weapon(std::string type);
+                        ~Weapon(void);
+        std::string&    getType(void);
+        void            setType(std::string type);
 
 };
+
+#endif
