@@ -6,11 +6,11 @@
 #    By: gozon <gozon@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/18 11:02:35 by gozon             #+#    #+#              #
-#    Updated: 2025/01/29 16:28:56 by gozon            ###   ########.fr        #
+#    Updated: 2025/01/29 18:15:15 by gozon            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = complain
+NAME = harlFilter
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 SRC_FILES = Harl.cpp main.cpp

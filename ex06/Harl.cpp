@@ -6,7 +6,7 @@
 /*   By: gozon <gozon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/29 16:03:23 by gozon             #+#    #+#             */
-/*   Updated: 2025/01/29 16:57:35 by gozon            ###   ########.fr       */
+/*   Updated: 2025/01/29 18:14:45 by gozon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,6 +66,7 @@ void    Harl::filter(std::string level) {
             this->warning();
         case 3:
             this->error();
+            break;
         default:
             std::cout << "Unknown log level" << std::endl;
     }
