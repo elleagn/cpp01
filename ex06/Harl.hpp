@@ -6,7 +6,7 @@
 /*   By: gozon <gozon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/29 15:09:45 by gozon             #+#    #+#             */
-/*   Updated: 2025/01/29 15:20:34 by gozon            ###   ########.fr       */
+/*   Updated: 2025/01/29 16:37:09 by gozon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,11 @@ class Harl
         void   info(void);
         void   warning(void);
         void   error(void);
-        
+
 
     public:
 
-        void   complain(std::string level);
+        void   filter(std::string level);
 
 };
 

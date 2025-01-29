@@ -6,7 +6,7 @@
 /*   By: gozon <gozon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/29 16:03:23 by gozon             #+#    #+#             */
-/*   Updated: 2025/01/29 16:24:21 by gozon            ###   ########.fr       */
+/*   Updated: 2025/01/29 16:57:35 by gozon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,19 +42,32 @@ void    Harl::error(void) {
 
 }
 
-void    Harl::complain(std::string level) {
+static int index(std::string level) {
 
-    typedef void (Harl::*mfptr)(void);
-
-    mfptr   fptr[] = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
     std::string levels[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 
     for (int i = 0; i < 4; i++) {
         if (levels[i] == level) {
-            (this->*fptr[i])();
-            return ;
+            return (i);
         }
     }
-    std::cout << "Unknown log level." << std::endl;
+
+    return (-1);
+}
+
+void    Harl::filter(std::string level) {
+
+    switch(index(level)) {
+        case 0:
+            this->debug();
+        case 1:
+            this->info();
+        case 2:
+            this->warning();
+        case 3:
+            this->error();
+        default:
+            std::cout << "Unknown log level" << std::endl;
+    }
 
 }

@@ -6,7 +6,7 @@
 /*   By: gozon <gozon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/29 16:24:27 by gozon             #+#    #+#             */
-/*   Updated: 2025/01/29 16:28:08 by gozon            ###   ########.fr       */
+/*   Updated: 2025/01/29 16:57:50 by gozon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int main(int ac, char **av) {
         return (1);
     }
 
-    harl.complain(av[1]);
+    harl.filter(av[1]);
 
     return (0);
 }
