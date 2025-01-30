@@ -6,13 +6,13 @@
 /*   By: gozon <gozon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/29 10:51:21 by gozon             #+#    #+#             */
-/*   Updated: 2025/01/29 11:40:41 by gozon            ###   ########.fr       */
+/*   Updated: 2025/01/30 11:10:15 by gozon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "replace.hpp"
 
-bool file_to_string(char *filename, std::string& outstring) {
+bool file_to_string(const char *filename, std::string& outstring) {
 
     std::ifstream ifs(filename);
     std::string line = "";
@@ -41,12 +41,12 @@ bool file_to_string(char *filename, std::string& outstring) {
     return (true);
 }
 
-bool string_to_file(std::string instring, char *filename)
+bool string_to_file(std::string instring, const char *filename)
 {
     std::ofstream ofs(filename, std::fstream::out | std::fstream::trunc);
 
     if (!ofs.is_open()) {
-        std::perror("error while openimg file");
+        std::perror("error while opening file");
         return (false);
     }
 
