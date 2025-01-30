@@ -1,6 +1,24 @@
-hello bllblblbllbblblblblblblblblblhelloblblblblbl
-hellohellohellohellohell
-hel
-lo
-blbllblbl hellohellohellohellohellhello
-blbllbblblblblblblbllblblblbllblblblb
+End of line:
+My name is blbl 
+
+Beginning of line:
+blbl is my name
+
+Middle of line:
+Hello blbl how are you?
+
+Several in a row:
+blbl * blbl = blblblbl 
+
+Test with something that ends with bl:
+blblbl
+
+Separated by a newline:
+bl
+bl
+
+Attached with another word:
+blblhello 
+
+Something with the same beginning:
+blhello
