@@ -6,7 +6,7 @@
 /*   By: gozon <gozon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/29 09:27:32 by gozon             #+#    #+#             */
-/*   Updated: 2025/02/03 10:25:31 by gozon            ###   ########.fr       */
+/*   Updated: 2025/02/03 13:11:34 by gozon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,9 +48,9 @@ void    replaceStringFile(std::ifstream& ifs, std::ofstream& ofs,
             ofs << "\n";
         }
     }
-        if (ifs.bad()) {
-            std::perror("ifs: error while reading file");
-        }
+    if (ifs.bad()) {
+        std::perror("ifs: error while reading file");
+    }
                  
 }
 
