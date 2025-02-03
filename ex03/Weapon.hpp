@@ -6,7 +6,7 @@
 /*   By: gozon <gozon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/27 09:27:04 by gozon             #+#    #+#             */
-/*   Updated: 2025/01/30 08:46:16 by gozon            ###   ########.fr       */
+/*   Updated: 2025/02/03 13:10:19 by gozon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ class Weapon {
 
         Weapon(std::string type);
         ~Weapon(void);
-        std::string&    getType(void);
-        void            setType(std::string type);
+        const std::string&  getType(void);
+        void                setType(std::string type);
 
 };
 
